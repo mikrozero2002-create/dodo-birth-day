@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTH DAY DODO </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #fff5f5; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .heart-animation { animation: pulse 1.5s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+<video id="bg-music" src="Video Project.m4a" loop style="display:none;"></video>
+    <!-- Section 1: الهيدر والترحيب -->
+    <header class="h-screen flex flex-col justify-center items-center text-white hero-gradient relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <!-- هنا ممكن تضيف صورة خلفية ناعمة ليكم لو حبيت -->
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold mb-4 drop-shadow-lg z-10 tracking-wide">كل سنة وأنتي طيبة يدودتييي</h1>
+        <p class="text-2xl md:text-3xl font-light z-10 italic mt-6 mb-12">يا احلي حاجه في حياتي</p>
+        <div class="mt-8 heart-animation z-10 text-5xl">❤️</div>
+        <a href="#story" class="absolute bottom-10 animate-bounce text-white">تعالي بصي بحبك قد اي وفاكر👇</a>
+    </header>
+
+    <!-- Section 2: حكايتنا (التواريخ المهمة) -->
+    <section id="story" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl text-center font-bold text-pink-600 mb-16">ذكرياتنا اللي محفورة في قلبي</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- تاريخ أول مقابلة -->
+                <div class="glass p-8 rounded-3xl text-center shadow-xl transform hover:-translate-y-2 transition">
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="font-bold text-xl mb-2">أول مرة شوفت احلي عيون</h3>
+                    <!-- عدل التاريخ هنا -->
+                    <p class="text-gray-600">15\9\2025</p> 
+                </div>
+
+                <!-- أول مرة قولت بحبك -->
+                <div class="glass p-8 rounded-3xl text-center shadow-xl transform hover:-translate-y-2 transition border-t-4 border-pink-500">
+                    <div class="text-4xl mb-4">📢</div>
+                    <h3 class="font-bold text-xl mb-2">اول مره اعترفت لدودتي</h3>
+                    <!-- عدل التاريخ هنا -->
+                    <p class="text-gray-600">30\9\2025</p>
+                </div>
+
+                <!-- أول مرة هي قالت -->
+                <div class="glass p-8 rounded-3xl text-center shadow-xl transform hover:-translate-y-2 transition">
+                    <div class="text-4xl mb-4">💖</div>
+                    <h3 class="font-bold text-xl mb-2">أول مرة ابقي عايش بجد</h3>
+                    <!-- عدل التاريخ هنا -->
+                    <p class="text-gray-600">6\10\2025 الكوربه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: العداد (بقالنا قد إيه) -->
+    <section class="py-20 bg-pink-100 relative">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-10 text-pink-700">بقالنا مع بعض بالظبط:</h2>
+            <div id="timer" class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
+                <div class="bg-pink-500 p-6 rounded-2xl shadow-lg">
+                    <span id="days" class="text-4xl font-bold block">0</span> يوم
+                </div>
+                <div class="bg-pink-500 p-6 rounded-2xl shadow-lg">
+                    <span id="hours" class="text-4xl font-bold block">0</span> ساعة
+                </div>
+                <div class="bg-pink-500 p-6 rounded-2xl shadow-lg">
+                    <span id="minutes" class="text-4xl font-bold block">0</span> دقيقة
+                </div>
+                <div class="bg-pink-500 p-6 rounded-2xl shadow-lg">
+                    <span id="seconds" class="text-4xl font-bold block">0</span> ثانية
+                </div>
+            </div>
+            <p class="mt-8 text-pink-800 font-bold italic">"من يوم ٦ أكتوبر ٢٠٢٥، وعمري ابتدى معاكي"</p>
+        </div>
+    </section>
+
+    <!-- Section 4: معرض الصور -->
+   <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl text-center font-bold text-pink-600 mb-16">أحلى لحظاتنا سوا</h2>
+            
+            <div class="columns-1 md:columns-3 gap-4 space-y-4">
+                
+                <div class="break-inside-avoid relative rounded-3xl overflow-hidden shadow-lg group">
+                    <img src="pic 1.jpeg" alt="صورة لنا" class="w-full h-auto group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-bold text-lg italic">كنت مبسوط اوي واحنا بنتصور❤️</p>
+                    </div>
+                </div>
+
+                <div class="break-inside-avoid relative rounded-3xl overflow-hidden shadow-lg group">
+                    <img src="pic 3.jpeg" alt="صورة لنا" class="w-full h-auto group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-bold text-lg italic">كنت متلج بس فداكي يدودتي💖</p>
+                    </div>
+                </div>
+
+                <div class="break-inside-avoid relative rounded-3xl overflow-hidden shadow-lg group">
+                    <img src="pic 2.jpeg" alt="صورة لنا" class="w-full h-auto group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <p class="text-white font-bold text-lg italic">بحبك ياعمري</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 relative overflow-hidden flex items-center justify-center min-h-screen" style="background: linear-gradient(135deg, #ffe3e3 0%, #fbc2eb 100%);">
+        
+        <div class="absolute inset-0 opacity-40 pointer-events-none select-none">
+            <span class="absolute text-4xl animate-bounce" style="top: 10%; right: 15%; animation-duration: 3s;">❤️</span>
+            <span class="absolute text-5xl animate-pulse" style="top: 40%; left: 10%; animation-duration: 4s;">💖</span>
+            <span class="absolute text-3xl animate-bounce" style="bottom: 20%; right: 25%; animation-duration: 5s;">✨</span>
+            <span class="absolute text-4xl animate-pulse" style="bottom: 15%; left: 20%; animation-duration: 2.5s;">❤️</span>
+            <span class="absolute text-5xl animate-bounce" style="top: 70%; right: 8%; animation-duration: 6s;">💕</span>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 z-10">
+            <div class="bg-white/60 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/40 text-center transform hover:scale-[1.01] transition duration-500">
+                
+                <div class="inline-block bg-pink-500/10 p-4 rounded-full mb-6">
+                    <span class="text-4xl text-pink-600 block animate-pulse">💝</span>
+                </div>
+
+                <p class="text-xl md:text-2xl text-gray-800 font-medium leading-relaxed md:leading-loose text-center" style="word-spacing: 4px;">
+                    كل سنة وأنتي طيبة يدودتي، وكل عيد ميلادك وإحنا سوا ومع بعض علطول، وتبقى من نصيبي يارب ومراتي إن شاء الله وأم عيالي وعمري كلو.. 
+                    <br><br>
+                    بحبك أوي يحبيبتي والله، وأنتي حياتي كلها والله ومليش غيرك ولا أغلى منك، ربنا ميحرمنيش منك ولا تبعدي عني أبداً ولا أشوف فيكي حاجة وحشة، وتبقى كويسة علطول ومبسوطة معايا.. 
+                    <br><br>
+                    ربنا يقدرني وأبسطك وأجيبلك الدنيا كلها ليكي ولعنيكي الحلوة دي اللي بحبها أوي، وبحبك أنتي أوي أوي أوي والله.. ربنا يخليكي ليا يدودتي وتفضلي معايا علطول ينور عيني.
+                </p>
+
+                <div class="mt-8 border-t border-pink-200 pt-6">
+                    <span class="font-bold italic text-pink-600 text-lg">يارب تبقي من نصيبي ياعمري كلو❤️</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer: رسالة أخيرة -->
+    <footer class="py-10 text-center text-gray-500 border-t">
+        <p>مصنوع بكل حب ❤️ بواسطة لولو</p>
+    </footer>
+
+    <!-- JavaScript للعداد -->
+    <script>
+        const startDate = new Date("October 6, 2025 00:00:00").getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const diff = now - startDate;
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = d;
+            document.getElementById("hours").innerText = h;
+            document.getElementById("minutes").innerText = m;
+            document.getElementById("seconds").innerText = s;
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer(); // لتشغيله فوراً عند التحميل
+        // كود تشغيل الأغنية المطور: طلقة وبدون تأخير
+        const music = document.getElementById('bg-music');
+        
+        // يجبر المتصفح يحمل الصوت في الخلفية فوراً
+        music.preload = "auto"; 
+
+        function startMusic() {
+            music.play().then(() => {
+                window.removeEventListener('click', startMusic);
+                window.removeEventListener('pointerdown', startMusic);
+                window.removeEventListener('scroll', startMusic);
+            }).catch(error => console.log("مستني تفاعل..."));
+        }
+
+        // يلقط أي حركة على الشاشة ويشغل فوراً
+        window.addEventListener('click', startMusic);
+        window.addEventListener('pointerdown', startMusic);
+        window.addEventListener('scroll', startMusic);
+    </script>
+</body>
+</html>
